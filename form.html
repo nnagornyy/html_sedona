@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sedona форма отзыва</title>
+        <meta name="description" content="Городок в США">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body> 
+        <header class="page-header">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="photo.html">фото и видео</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Форма отзыва</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+                    </li>
+                </ul>
+                <button class="button-close main-nav__button-close" type="button">Закрыть</button>
+            </nav>
+            <a class="page-header__logo" href="index.html">
+                <img class="page-header__logo-img page-header__logo-img--mobile" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
+                <img class="page-header__logo-img page-header__logo-img--desk" style="display: none;">
+            </a>
+            <button class="page-header__button" type="button">Открыть меню</button>
+        </header>
+        <main class="page-main">
+            <section class="inner-photo">
+                <img class="inner-photo__img" src="img/" width="229" height="39" alt="Sedona">
+                <div class="inner-photo__mask"></div>
+            </section> 
+            <section class="forms">
+                <h1 class="forms__title">Оставьте свой отзыв</h1>
+                <p class="forms__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+                <form class="main-form" action="" method="POST">
+                    <fieldset class="form-group form-group--name">
+                        <legend class="form-group__legend form-group__legend--name">Представьтесь:</legend>
+                        <label class="form-group__name">ИМЯ*:
+                            <input class="form-group__input-name" type="text" placeholder="Петр">
+                        </label>
+                        <label class="form-group__name">ФАМИЛИЯ*:
+                            <input class="form-group__input-name" type="text" placeholder="Иванов">
+                        </label>
+                        <label class="form-group__name">Отчество:
+                            <input class="form-group__input-name" type="text" placeholder="Александрович">
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--contact">
+                        <legend class="form-group__legend form-group__legend--contact">Контактная информация:</legend>
+                        <label class="form-group__label-contact">Контактный телефон*:
+                            <input class="form-group__input-contact" type="tel" placeholder="Введите телефон">
+                            <span class="form-group__tel-img"></span>
+                        </label>
+                        <label class="form-group__label-contact">Электронная почта*:
+                            <input class="form-group__input-contact" type="email" placeholder="Введите e-mail">
+                            <span class="form-group__email-img"></span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--radio">
+                        <legend class="form-group__legend form-group__legend--radio">Ваше общее впечатление:</legend>
+                        <input class="form-group__input-radio" name="group-radio" type="radio" id="pozitiv" checked>
+                        <label class="form-group__label-radio" for="pozitiv">Скорее положительное</label>
+                        <input class="form-group__input-radio" name="group-radio" type="radio" id="negativ">
+                        <label class="form-group__label-radio" for="negativ">Скорее отрицательное</label>
+                        <input class="form-group__input-radio" name="group-radio" type="radio" id="noanswer">
+                        <label class="form-group__label-radio" for="noanswer">Затрудняюсь ответить</label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--checkbox">
+                        <legend class="form-group__legend form-group__legend--checkbox">Посещенные достопримечательности:</legend>
+                        <input class="form-group__input-check" name="group-check" type="checkbox" id="brige" checked>
+                        <label class="form-group__label-check" for="brige">Мост Дьявола</label>
+                        <input class="form-group__input-check" name="group-check" type="checkbox" id="mount" checked>
+                        <label class="form-group__label-check" for="mount">Гора-Колокол</label>
+                        <input class="form-group__input-check" name="group-check" type="checkbox" id="park" checked>
+                        <label class="form-group__label-check" for="park">Слайд-парк</label>
+                        <input class="form-group__input-check" name="group-check" type="checkbox" id="rock">
+                        <label class="form-group__label-check" for="rock">Красные скалы</label>
+                    </fieldset>
+                    <fieldset class="form-group form-group--textarea">
+                        <legend class="form-group__legend form-group__legend--textarea">Посещенные достопримечательности:</legend>
+                        <textarea class="form-group__input-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                    </fieldset>
+                    <button class="form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+                </form>
+           </section>
+        </main> 
+        <footer class="page-footer">
+            <p class="page-footer__hash">#visitSEDONA</p>
+            <ul class="page-footer__social">
+                <li class="page-footer__social-btn"><a class="page-footer__social-link">twitter</a></li>
+                <li class="page-footer__social-btn"><a class="page-footer__social-link">facebook</a></li>
+                <li class="page-footer__social-btn"><a class="page-footer__social-link">youtube</a></li>
+            </ul>
+            <p class="page-footer__dev">Разработано<a class="page-footer__dev-link"><img width="27" height="34" alt="Логотип htmlacademy"></a></p>
+        </footer>    
+        <script src="./js/script.js" defer></script>
+    </body>
+</html>
