@@ -27,9 +27,12 @@
                 </ul>
                 <button class="button-close main-nav__button-close" type="button">Закрыть</button>
             </nav>
-            <a class="page-header__logo" href="index.html">
-                <img class="page-header__logo-img page-header__logo-img--mobile" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
-                <img class="page-header__logo-img page-header__logo-img--desk" style="display: none;">
+            <a class="page-header__logo">
+                <picture class="page-header__logo-picture">
+                    <source srcset="" media="(min-width: 768px)">
+                    <source srcset="" media="(min-width: 1600px)">
+                    <img class="page-header__logo-img page-header__logo-img--mobile" src="img/logotype-mobile.svg" width="102" height="83" alt="Sedona">
+                </picture>
             </a>
             <button class="page-header__button" type="button">Открыть меню</button>
         </header>
